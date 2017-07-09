@@ -8,12 +8,19 @@
 
 import UIKit
 
-class ColorsViewController: UIViewController {
+class ColorsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
     @IBOutlet weak var colorsTableView: UITableView!
 
+    var colors: [String] = ["red", "orange", "yellow", "green", "blue", "purple", "brown"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        
+        colorsTableView.delegate = self
+        colorsTableView.dataSource = self
+        
+        title = "Colors"
         // Do any additional setup after loading the view.
     }
 
@@ -22,6 +29,29 @@ class ColorsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return colors.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "colorcell", for: indexPath)
+        cell.textLabel?.text = colors[indexPath.row]
+        
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let row = tableView.indexPathForSelectedRow?.row {
+            let color = colors[row]
+            print("Selected cell \(color)")
+        }
+        
+    }
+
 
     /*
     // MARK: - Navigation
