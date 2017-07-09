@@ -15,7 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		32FDCEAC1F12E46500F4D173 /* Colors-Table-View-Challenge.git.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Colors-Table-View-Challenge.git.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		32FDCEAC1F12E46500F4D173 /* Colors-Table-View-Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Colors-Table-View-Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		32FDCEAF1F12E46500F4D173 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		32FDCEB41F12E46500F4D173 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		32FDCEB61F12E46500F4D173 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -38,7 +38,7 @@
 		32FDCEA31F12E46400F4D173 = {
 			isa = PBXGroup;
 			children = (
-				32FDCEAE1F12E46500F4D173 /* Colors-Table-View-Challenge.git */,
+				32FDCEAE1F12E46500F4D173 /* Colors-Table-View-Challenge */,
 				32FDCEAD1F12E46500F4D173 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,12 +46,12 @@
 		32FDCEAD1F12E46500F4D173 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				32FDCEAC1F12E46500F4D173 /* Colors-Table-View-Challenge.git.app */,
+				32FDCEAC1F12E46500F4D173 /* Colors-Table-View-Challenge.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		32FDCEAE1F12E46500F4D173 /* Colors-Table-View-Challenge.git */ = {
+		32FDCEAE1F12E46500F4D173 /* Colors-Table-View-Challenge */ = {
 			isa = PBXGroup;
 			children = (
 				32FDCEC11F12E53B00F4D173 /* ColorsViewController.swift */,
@@ -61,15 +61,16 @@
 				32FDCEB81F12E46500F4D173 /* LaunchScreen.storyboard */,
 				32FDCEBB1F12E46500F4D173 /* Info.plist */,
 			);
+			name = "Colors-Table-View-Challenge";
 			path = "Colors-Table-View-Challenge.git";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		32FDCEAB1F12E46500F4D173 /* Colors-Table-View-Challenge.git */ = {
+		32FDCEAB1F12E46500F4D173 /* Colors-Table-View-Challenge */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 32FDCEBE1F12E46500F4D173 /* Build configuration list for PBXNativeTarget "Colors-Table-View-Challenge.git" */;
+			buildConfigurationList = 32FDCEBE1F12E46500F4D173 /* Build configuration list for PBXNativeTarget "Colors-Table-View-Challenge" */;
 			buildPhases = (
 				32FDCEA81F12E46500F4D173 /* Sources */,
 				32FDCEA91F12E46500F4D173 /* Frameworks */,
@@ -79,9 +80,9 @@
 			);
 			dependencies = (
 			);
-			name = "Colors-Table-View-Challenge.git";
+			name = "Colors-Table-View-Challenge";
 			productName = "Colors-Table-View-Challenge.git";
-			productReference = 32FDCEAC1F12E46500F4D173 /* Colors-Table-View-Challenge.git.app */;
+			productReference = 32FDCEAC1F12E46500F4D173 /* Colors-Table-View-Challenge.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -100,7 +101,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 32FDCEA71F12E46400F4D173 /* Build configuration list for PBXProject "Colors-Table-View-Challenge.git" */;
+			buildConfigurationList = 32FDCEA71F12E46400F4D173 /* Build configuration list for PBXProject "Colors-Table-View-Challenge" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -113,7 +114,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				32FDCEAB1F12E46500F4D173 /* Colors-Table-View-Challenge.git */,
+				32FDCEAB1F12E46500F4D173 /* Colors-Table-View-Challenge */,
 			);
 		};
 /* End PBXProject section */
@@ -285,7 +286,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		32FDCEA71F12E46400F4D173 /* Build configuration list for PBXProject "Colors-Table-View-Challenge.git" */ = {
+		32FDCEA71F12E46400F4D173 /* Build configuration list for PBXProject "Colors-Table-View-Challenge" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				32FDCEBC1F12E46500F4D173 /* Debug */,
@@ -294,7 +295,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		32FDCEBE1F12E46500F4D173 /* Build configuration list for PBXNativeTarget "Colors-Table-View-Challenge.git" */ = {
+		32FDCEBE1F12E46500F4D173 /* Build configuration list for PBXNativeTarget "Colors-Table-View-Challenge" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				32FDCEBF1F12E46500F4D173 /* Debug */,
