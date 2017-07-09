@@ -12,6 +12,7 @@ class ColorsViewController: UIViewController, UITableViewDelegate, UITableViewDa
     @IBOutlet weak var colorsTableView: UITableView!
 
     var colors: [String] = ["red", "orange", "yellow", "green", "blue", "purple", "brown"]
+    var orderUIColors: [UIColor] = [.red, .orange, .yellow, .green, .blue, .purple, .brown]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,6 +41,7 @@ class ColorsViewController: UIViewController, UITableViewDelegate, UITableViewDa
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "colorcell", for: indexPath)
         cell.textLabel?.text = colors[indexPath.row]
+        cell.backgroundColor = orderUIColors[indexPath.row]
         
         return cell
     }
